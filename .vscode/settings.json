@@ -1,10 +1,10 @@
 {
     "code-runner.executorMap": {
-        "c": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
-        "arm": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
+        "c": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt || printf \"\\nReturned code : %d\\n\" $?",
+        "arm": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt || printf \"\\nReturned code : %d\\n\" $?",
     },
     "code-runner.executorMapByFileExtension": {
-        ".s": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
+        ".s": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt || printf \"\\nReturned code : %d\\n\" $?",
     },
     "code-runner.runInTerminal": true
 }
