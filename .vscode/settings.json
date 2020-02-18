@@ -1,0 +1,10 @@
+{
+    "code-runner.executorMap": {
+        "c": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
+        "arm": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
+    },
+    "code-runner.executorMapByFileExtension": {
+        ".s": "mkdir -p $workspaceRoot/.tmp/ && gcc $dir$fileName -o $workspaceRoot/.tmp/$fileNameWithoutExt && $workspaceRoot/.tmp/$fileNameWithoutExt",
+    },
+    "code-runner.runInTerminal": true
+}
